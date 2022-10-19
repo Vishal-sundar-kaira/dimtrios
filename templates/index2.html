@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detector</title>
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style2.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/hompage.css') }}">
 </head>
 
 <body>
@@ -17,17 +17,18 @@
         </label> 
         <label class="logo">DIMITRIOS</label>
         <ul>
-          <li><b><a class="link" href="{{url_for('home')}}">Home</a></b></li>
-          <li><b><a class="link" href="{{url_for('faced')}}">poeple counter</a></b><li>
-          <li><b><a class="link" href="{{url_for('text')}}">Text Summarizer</a></b><li>
-          <li><b><a class="link" href="{{url_for('color')}}">Color Detector</a></b></li>
-          <li><b><a class="link" href="{{url_for('lang')}}">Language Detector</a></b></li>
+          <li><a class="link" href="{{url_for('home')}}">Home</a></li>
+          <li><a class="link" href="{{url_for('faced')}}">Face Detection</a><li>
+          <li><a class="link" href="{{url_for('text')}}">Text Summarizer</a><li>
+          <li><a class="link" href="{{url_for('color')}}">Color Detector</a></li>
+          <li><a class="link" href="{{url_for('lang')}}">Language Detector</a></li>
         </ul>
-    </nav>
+      </nav>
+      <div class="line"></div>
     
-    <div class="header">
-        <div class="right-header">
-            <div class="box2" id="output" >
+    <div class="header1">
+        <div class="right-header1">
+            <div class="box21" id="output" >
                 {{sumupf}}
             </div>
         </div>
@@ -36,7 +37,6 @@
         <input type="file" id="url" name="url">
         <input type="submit" id="submit" name="submit">
     </form>
-    
     <script src="{{url_for('static', filename='index.js')}}"></script>
 </body>
 

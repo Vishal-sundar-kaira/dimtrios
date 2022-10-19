@@ -15,31 +15,30 @@
       </label> 
       <label class="logo">DIMITRIOS</label>
       <ul>
-        <li><b><a class="link" href="{{url_for('home')}}">Home</a></b></li>
-        <li><b><a class="link" href="{{url_for('faced')}}">poeple counter</a></b><li>
-        <li><b><a class="link" href="{{url_for('text')}}">Text Summarizer</a></b><li>
-        <li><b><a class="link" href="{{url_for('color')}}">Color Detector</a></b></li>
-        <li><b><a class="link" href="{{url_for('lang')}}">Language Detector</a></b></li>
+        <li><a class="link" href="{{url_for('home')}}">Home</a></li>
+        <li><a class="link" href="{{url_for('faced')}}">Face Detection</a><li>
+        <li><a class="link" href="{{url_for('text')}}">Text Summarizer</a><li>
+        <li><a class="link" href="{{url_for('color')}}">Color Detector</a></li>
+        <li><a class="link" href="{{url_for('lang')}}">Language Detector</a></li>
       </ul>
     </nav>
-    <table class="center">
-        <tr>
-            <td>
-                <div class="cards">
-                    <p><h3>Today's world is pacing rapidly towards AI and ML. The  internet has become a necessity in every domain hence there is a need for AI which can automate the tasks.  we need to make this technology easily accessible to the users by linking it with web pages.We need to fulfil the demand of combination of AI and web technology.</h3></p>
-                </div>
-            </td>
-            <td><img src="static/styles/image-removebg-preview (1).png"></td>
-        </tr>
-    </table>
+    <div class="line"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="image">
+    <img src = "static\styles\hpicon.jpeg">
+     </div>   
+
     <table class="center1">
         <tr>
             <td>
                 <div class="peoplecountercard">
                     <div class="pctitle">
-                        <h1>People<br>Counter</h1>
+                        <h1>Face<br>Detector</h1>
                     </div>
-                    <div class="pcicon"><img src="static/styles/pcicon.png" height="200px"></div>
+                    <div class="pcicon"><a class="link" href="{{url_for('faced')}}"><img src="static/styles/pcicon.png" height="200px"></a></div>
                 </div>
             </td>
             <td>
@@ -47,7 +46,7 @@
                     <div class="cdtitle">
                         <h1>Color<br>Detector</h1>
                     </div>
-                    <div class="cdicon"><img src="static/styles/cdicon.png" height="200px"></div>
+                    <div class="cdicon"><a class="link" href="{{url_for('color')}}"><img src="static/styles/cdicon.png" height="200px"></a></div>
                 </div>
             </td>
             <td>
@@ -55,7 +54,7 @@
                     <div class="tstitle">
                         <h1>Text<br>Summariser</h1>
                     </div>
-                    <div class="tsicon"><img src="static/styles/tsicon.png"></div>
+                    <div class="tsicon"><a class="link" href="{{url_for('text')}}"><img src="static/styles/tsicon.png"></a></div>
                 </div>
             </td>
             <td>
@@ -63,7 +62,7 @@
                     <div class="ldtitle">
                         <h1>Language<br>Detector</h1>
                     </div>
-                    <div class="ldicon"><img src="static/styles/ldicon.png"></div>
+                    <div class="ldicon"><a class="link" href="{{url_for('lang')}}"><img src="static/styles/ldicon.png"></a></div>
                 </div>
             </td>   
         </tr>
