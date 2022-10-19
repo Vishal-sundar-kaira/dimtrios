@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Economica&display=swap');
 :root{
     --color-white:white;
     --color-pink: #ff6262;
@@ -13,7 +14,7 @@
     box-sizing: border-box;
   }
 body{
-font-family: montserrat;
+  font-family: 'Economica', sans-serif;
 }
 nav{
 background: white;
@@ -22,7 +23,7 @@ width: 100%;
 }
 label.logo{
 color:#062538;
-font-size: 35px;
+font-size: 45px;
 line-height: 80px;
 padding: 0 100px;
 font-weight: bold;
@@ -37,7 +38,7 @@ margin: 0 5px;
 }
 nav ul li a{
 color: #062538;
-font-size: 17px;
+font-size: 27px;
 padding: 7px 13px;
 border-radius: 3px;
 text-transform: uppercase;
@@ -99,25 +100,24 @@ transition: all .5s;
     grid-template-columns: auto auto;
 
 }
-.left-header{
+.left-header,.right-header{
     background-color:var(--color-white);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50vw;
-    height: 100vh;
+    width: 48.5vw;
+    height: 86vh;
 
 }
 .box1{
     width: 40vw;
     height: 60vh;
     background-color:var(--color-gray);
-    border: #062538 solid 5px ;
     border-radius: 5px;
 }
 .box1 img{
-  width: 39.3vw;
-  height: 58.6vh;
+  width: 40vw;
+  height: 60vh;
 }
 #url{
   margin: 20px 20px 0px 0px;
@@ -125,24 +125,16 @@ transition: all .5s;
 #submit{
   margin: 20px 20px;
 }
-.right-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50vw;
-    height: 100vh;
-    background-color: var(--color-white);
-}
 .box2{
     width: 40vw;
     height: 60vh;
     background-color:var(--color-gray);
-    border: #062538 solid 5px ;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .box2 img{
-    width: 39.3vw;
-    height: 58.6vh;
+    width: 40vw;
+    height:60vh;
+    
 }
 .diagram{
 display:flex;

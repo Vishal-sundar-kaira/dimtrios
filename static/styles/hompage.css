@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Economica&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -6,18 +7,23 @@
     box-sizing: border-box;
   }
   body{
-    font-family: montserrat;
+    font-family: 'Economica', sans-serif;
+
   }
   nav{
     background: white;
     height: 80px;
     width: 100%;
+    padding-top: 1.25rem;
+    padding-right: 3rem;
+
   }
   label.logo{
     color:#062538;
-    font-size: 35px;
+    font-size: 45px;
     line-height: 80px;
     padding: 0 100px;
+    padding-left: 3rem;
     font-weight: bold;
   }
   nav ul{
@@ -30,7 +36,7 @@
   }
   nav ul li a{
     color: #062538;
-    font-size: 17px;
+    font-size: 27px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
@@ -85,6 +91,15 @@
       left: 0;
     }
   }
+  .line{
+    position: absolute;
+    width: 83rem;
+    height: 0px;
+    left: 98px;
+    top: 107px;
+
+border: 0.5px solid #073763;
+  }
   section{
     background: url(bg1.jpg) no-repeat;
     background-size: cover;
@@ -133,7 +148,7 @@
 }
 td{
     margin-left: 1rem;
-    padding-left: 5rem;
+    padding: 7rem 0rem 0rem 5rem;
 }
 input[type=text]
     {
@@ -145,3 +160,133 @@ input[type=text]
     .textarea-scroll{
             overflow-x: visible;
     }
+    .image{
+      margin-left: 150px;
+      padding-block: 5rem;
+      padding-block-end: 4rem;
+    }
+    .header{
+      display: grid;
+      width: 100vw;
+      height: 100vh;
+      grid-template-columns: auto auto;
+  
+  }
+  .left-header,.right-header{
+      background-color:var(--color-white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 48.5vw;
+      height: 86vh;
+  
+  }
+  .box1{
+      width: 40vw;
+      height: 60vh;
+      background-color:var(--color-gray);
+      border-radius: 5px;
+  }
+  .box1 img{
+    width: 40vw;
+    height: 60vh;
+  }
+  #url{
+    margin: 20px 20px 0px 0px;
+  }
+  #submit{
+    margin: 20px 20px;
+  }
+  .box2{
+      width: 40vw;
+      height: 60vh;
+      background-color:var(--color-gray);
+      border-radius: 10px;
+  }
+  .box2 img{
+      width: 40vw;
+      height:60vh;
+      
+  }
+  .diagram{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  width: 100vw;
+  height: 70vh;
+  background-color: black;
+  
+  }
+  .diagram img{
+  width: 100vw;
+  height: 70vh;
+  }
+  .main{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+  }
+
+/* CSS */
+#submit {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+.header1{
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: auto auto;
+}
+.right-header1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 85vh;
+  background-color: var(--color-white);
+  padding: 0;
+}
+.box21{
+  width: 50vw;
+  height: 60vh;
+  background-color:var(--color-gray);
+  border: #062538 solid 2px ;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  overflow: scroll;
+  margin-top: 0;
+}
+#output{
+  margin-top: 0;
+}
+
+.form{
+  position: absolute;
+  left: 26%;
+  top: 90%;
+  align-items: center;
+
+}
+#submit{
+  align-items: center;
+}
